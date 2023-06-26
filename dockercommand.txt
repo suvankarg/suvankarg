@@ -1,0 +1,11 @@
+docker login --username=Suvankarg --email=suvankarghosh2019@outlook.com
+
+tcpdump -i any -vvnn -w /capture/capture.pcap icmp
+
+tcpdump -A -w capture.pcap
+
+docker cp c26ecab5ac1efae60628587e9473d8f8312b8fb5f8ea3d8861819f89667cfee7:/var/lib/apk/capture/capture.pcap capture1.pcap
+
+docker exec -it c26ecab5ac1efae60628587e9473d8f8312b8fb5f8ea3d8861819f89667cfee7 sh
+docker run --name app1 -p 80:8080 -d stacksimplify/dockerintro-springboot-helloworld-rest-api:1.0.0RELEASEc26ecab5ac1efae60628587e9473d8f8312b8fb5f8ea3d8861819f89667cfee7
+Docker pull stacksimplify/dockerintro-springboot-helloworld-rest-api:1.0.0-RELEASE1.0.0-RELEASE: Pulling from stacksimplify/dockerintro-springboot-helloworld-rest-api

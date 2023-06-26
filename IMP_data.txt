@@ -1,4 +1,0 @@
-Disk backup daily :
-https://medium.com/gsoft-tech/automateyour-azure-disk-kubernetes-volume-backup-b0c5075a3339
-
-https://stacksimplify.com/azure-aks/azure-aks-pull-acr-using-service-principal/
