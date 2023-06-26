@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: suvankargsuvankarg 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: suvankargsuvankarg
+  template:
+    metadata:
+      labels:
+        app: suvankargsuvankarg 
+    spec:
+      containers:
+        - name: suvankargsuvankarg 
+          image: demoacrtest01.azurecr.io/suvankargsuvankarg
+          ports:
+          - containerPort: 80
